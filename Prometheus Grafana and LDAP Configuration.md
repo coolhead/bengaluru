@@ -40,6 +40,7 @@ sudo mv consoles/ console\_libraries/ /etc/prometheus/
 
 prometheus –version
 
+![image](https://github.com/coolhead/bengaluru/assets/245313/5e328a7d-3542-444c-ac48-8c0487569142)
 
 
 **Configure Prometheus as a Service**
@@ -181,7 +182,7 @@ sudo systemctl restart prometheus
 
 
 
-# Grafana
+### Grafana
 
 Prometheus is now collecting statistics from the clients listed in the scrape\_configs section of its configuration file. However, the information can only be viewed as a raw data dump. The statistics are difficult to read and not very useful.
 
