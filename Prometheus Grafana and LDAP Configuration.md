@@ -65,8 +65,8 @@ Enter the following content into the file:
 
 File: /etc/systemd/system/prometheus.service
 
-|||
-| :- | :- |
+![image](https://github.com/coolhead/bengaluru/assets/245313/7379b909-7c6e-47fc-aff6-b3914a1a757c)
+
 1. The Wants and After options must be set to network-online.target.
 1. The User and Group fields must both be set to prometheus.
 1. The ExecStart parameter explains where to find the prometheus executable and defines the default options.
@@ -91,6 +91,8 @@ If the prometheus service fails to start properly, run the command journalctl
 sudo systemctl start prometheus
 
 sudo systemctl status prometheus
+
+![image](https://github.com/coolhead/bengaluru/assets/245313/37b6a20f-c4bc-4531-aa54-a93afac200d7)
 
 1. Access the Prometheus web interface and dashboard at http://localhost:9090. Replace localhost with the address of the monitoring server. Because Prometheus is using the default configuration file, it does not display much information yet.
 
@@ -182,7 +184,7 @@ sudo systemctl restart prometheus
 
 
 
-### Grafana
+# Grafana
 
 Prometheus is now collecting statistics from the clients listed in the scrape\_configs section of its configuration file. However, the information can only be viewed as a raw data dump. The statistics are difficult to read and not very useful.
 
